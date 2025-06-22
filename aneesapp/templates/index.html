@@ -1,0 +1,806 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>anees.com</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Load Static Tag for Django -->
+  {% load static %}
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/loo.jpg' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+  
+</html>
+
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'assets/img/logoo.jpg' %}" alt=""> 
+        <h1 class="sitename">AneesAnas</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li class="dropdown"><a href="#"><span>Find Me On</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/muhammad-anees-8a07472a9"target="_blank">Linkedin</a></li>
+              <li class="dropdown"><a href="#"><span>Social Links</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="http://www.youtube.com/@seaofinformation" target="_blank">YouTube</a></li>
+                  <li><a href="https://www.facebook.com/rajaanees.siddique/" target="_blank">Facebook</a></li>
+                  <li><a href="">instagram</a></li>
+                  <li><a href="https://x.com/MUHAMMADAN18606" target="_blank">twitter</a></li>
+                  <li><a href="#">patreon</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Fiver</a></li>
+              <li><a href="https://github.com/ANEES803" target="_blank">GitHub</a></li>
+              <li><a href="#">Upwork</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+                 <section class="hero-section">
+                 <video autoplay muted loop playsinline id="bg-video">
+                   <source src="{% static 'assets/video/coding-bg.mp4' %}" type="video/mp4">
+                        Your browser does not support the video tag.
+                             </video>
+
+                    <div class="overlay"></div> <!-- Optional dark overlay -->
+
+                     <div class="hero-content">
+                         <h2>I am Muhammad Anees</h2>
+                       <p><span class="typed" data-typed-items="Python Developer, Web Application Developer, AI & Machine Learning Enthusiast"></span></p>
+
+                         </div>
+                         </section>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+              <img src="{% static 'assets/img/profile-imgg.jpg' %}" class="img-fluid" alt="">  
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Muhammad Anees</span></p>
+                <p><strong>Profession: </strong> <span>Python developer</span></p>
+                <p><strong>Email: </strong> <span>aneesanas602@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>0326-5309015</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>Python</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>C++</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>HTML</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Css</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                I'm a passionate and dedicated Computer Engineering student from FAST NUCES Lahore,
+                 with a strong interest in AI, Machine Learning, and Data Science. My journey started with programming in C++ and Python,
+                  and I’ve built a solid foundation in object-oriented programming, data analysis, and problem-solving.
+              </p>
+              <p>
+               I'm currently exploring Django for backend development and have built this website using Django framework.
+                I actively work on creating dynamic and responsive web applications,
+                 combining Python logic with modern front-end design to build complete solutions.
+              </p>
+              <p>
+                Alongside web development, I'm also skilled in using tools like NumPy, Pandas, Matplotlib, and SQL,
+                 and I'm learning Scikit-learn and Seaborn for machine learning.
+                  I am deeply motivated to grow as a full-stack developer and data-driven engineer,
+                   always ready to take on new challenges and innovative ideas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Muhammad Anees</h4>
+              <p><em>I'm  a passionate Python developer with a strong foundation in programming and a growing interest in Artificial Intelligence.
+                 I specialize in building dynamic and responsive web applications using Django.
+                  I enjoy turning ideas into real-world solutions and constantly strive to learn new technologies and tools.</em></p>
+              <ul>
+                <li>Faisal Town Lahore,Punjab,Pakistan</li>
+                <li>0326-5309015</li>
+                <li>aneesanas602@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>BS Computer Engineering </h4>
+              <h5>Expected graduation 2027</h5>
+              <p><em>National university of computer and emerging scinces lahore</em></p>
+              <p>Key Courses: Programming Fundamentals, Object-Oriented Programming, Data Structures, Machine Learning (In Progress)</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Intermediate &amp; Pre-Engineering</h4>
+              <h5>2021-2023</h5>
+              <p><em>Govt Islamia College Civil Lines Lahore</em></p>
+              <p></p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Skills</h3>
+            <div class="resume-item">
+              <h4></h4>
+              <h5></h5>
+              <p><em> </em></p>
+              <ul>
+                <li>Programming Languages: Python, C++</li>
+                <li> Web Development: HTML, CSS, Django</li>
+                <li>Data Science Tools: NumPy, Pandas, Matplotlib</li>
+                <li>Databases: SQL</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Projects</h4>
+              <h5></h5>
+              <p><em></em></p>
+              <ul>
+                <li>Personal Portfolio Website – Created using Django </li>
+                <li>AI Assistant in Python – Voice-based assistant performing tasks like search, open apps, speak responses</li>
+                <li>Grocery Store System (C++) – Console-based project implementing OOP concepts</li>
+                <li>LMS System (C++) – Simulated learning management platform using inheritance & file handling</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Building Smart Applications for the Digital Future</p>
+
+        
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3> Web Application Development</h3>
+              </a>
+              <p>Designing and developing dynamic, scalable, and secure web applications using Django and Python.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Database Design & Integration</h3>
+              </a>
+              <p> Creating optimized and secure databases using PostgreSQL, MySQL, and integrating them with Django backends.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Portfolio & Blog Websites</h3>
+              </a>
+              <p>Creating elegant personal websites or blogs to showcase work, resume, and share thoughts.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>E-Commerce Website Development</h3>
+              </a>
+              <p>Custom online store solutions using Django & Python.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Data Analysis with NumPy & Pandas</h3>
+              </a>
+              <p>Analyze and clean data using Python libraries for insights.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Student or Business Project Assistance</h3>
+              </a>
+              <p>Help with academic or small business projects involving Python or data.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section accent-background">
+
+      <img src="{% static 'assets/img/stats-bg.jpg' %}" alt="" data-aos="fade-in">
+
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="0" class="purecounter">20</span>
+              <p>Clients</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="22" data-purecounter-duration="0" class="purecounter">22</span>
+              <p>Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="0" class="purecounter">300</span>
+              <p>Hours Of Support</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="0" class="purecounter">2</span>
+              <p>Awards</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Crafting powerful solutions with code and creativity</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          
+            <li data-filter=".filter-app">Web Applications</li>
+            
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="{% static 'assets/img/portfolio/ap1.jpg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                 <h4>Doctor Appointment management</h4>
+                  <p>Managing All clinic visitors and helping patients to set appointment</p>
+                  <a href="{% static 'assets/img/portfolio/ap1.jpg' %}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{% url 'portfolio-details' %}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="{% static 'assets/img/portfolio/ap2.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4></h4>
+                <p>Ai Assisstant</p>
+                <a href="{% static 'assets/img/portfolio/ap2.jpg' %}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="{% static 'assets/img/portfolio/ap3.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>E-Commerce Web Application</h4>
+                <p>An online store with product listings, user registration, cart system, order placement, and admin dashboard.</p>
+                <a href="{% static 'assets/img/portfolio/ap3.jpg' %}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <img src="{% static 'assets/img/portfolio/ap6.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product Price Comparison Website</h4>
+                <p>A web application that scrapes prices of a specific product from multiple e-commerce sites and displays comparisons. (Use Python + BeautifulSoup for scraping)</p>
+                <a href="{% static 'assets/img/portfolio/ap6.jpg' %}" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="{% static 'assets/img/portfolio/ap5.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Automated Data Cleaning Tool</h4>
+                <p>Upload messy Excel/CSV → auto-clean nulls, formats, duplicates → download clean file.</p>
+                <a href="{% static 'assets/img/portfolio/ap5.jpg' %}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="{% static 'assets/img/portfolio/ap4.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Task Manager with Django</h4>
+                <p>A personal task manager where users can sign up, create tasks, set deadlines, and mark completion status — includes CRUD operations.</p>
+                <a href="{% static 'assets/img/portfolio/ap4.jpg' %}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Pricing Section -->
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p> Answers to Your Most Common Queries – Helping You Understand My Services Better</p>
+                
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span> What is your core expertise in programming?</span></h3>
+                <div class="faq-content">
+                  <p>My core expertise lies in Python programming. I focus on building web applications using Django, data analysis using libraries like NumPy and Pandas, and I’m also exploring AI and machine learning.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>Have you developed any real-world projects?</span></h3>
+                <div class="faq-content">
+                  <p>Yes, I have worked on multiple projects including a Django-based portfolio website, data analysis tasks using Python, and I’m currently planning future projects such as an e-commerce website and AI-powered applications.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>Which tools and technologies are you familiar with?</span></h3>
+                <div class="faq-content">
+                  <p>I’m proficient in Python, Django, NumPy, Pandas, HTML, CSS, and Git. I also have experience working with basic SQL for database interactions.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>Are you open to freelance or collaboration work?</span></h3>
+                <div class="faq-content">
+                  <p>Absolutely! I am open to both freelance opportunities and collaborative projects where I can contribute my skills and also learn from others.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>What are your future goals in the tech field?</span></h3>
+                <div class="faq-content">
+                  <p>My goal is to become a full-stack Python developer and dive deeper into AI and machine learning. I’m also passionate about solving real-world problems through smart web applications.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section accent-background">
+
+      <img src="{% static 'assets/img/testimonials-bg.jpg' %}" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/t1.jpg' %}" class="testimonial-img" alt="">
+                <h3>Sir Ahmed Raza</h3>
+                <h4>Programming Instructor </h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Muhammad Anees is a quick learner with a strong passion for Python and web development. His dedication to building real-world projects using Django stood out during our sessions.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/t2.jpg' %}" class="testimonial-img" alt="">
+                <h3>Hassan Ali</h3>
+                <h4>FAST-NUCES Lahore</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I’ve worked with Anees on multiple university projects. He’s a reliable teammate and always takes initiative, especially when dealing with backend logic in Django and data analysis.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/t3.jpg' %}" class="testimonial-img" alt="">
+                <h3>Faisal Rehman</h3>
+                <h4>Senior Software Engineer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Anees combines creativity with strong technical skills. His interest in AI and modern development trends makes him a promising future developer.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/t4.jpg' %}" class="testimonial-img" alt="">
+                <h3>Zainab Khalid</h3>
+                <h4>Senior Software Engineer (Mentor)</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>From the very first day, Anees has shown a natural talent for Python programming and a keen eye for building structured applications. His growth is impressive.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/testimonnials-5.jpg' %}" class="testimonial-img" alt="">
+                <h3>Areeba Khan</h3>
+                <h4>Project Collaborator</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Working with Muhammad Anees on a Django-based web app was a great experience. He handled the backend logic efficiently and was always ready to debug and optimize. His skills in Python and problem-solving are solid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>"Let’s Work Together – Get in Touch!"</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Faisal Town Lahore</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+923265309015</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>aneesanas602@gmail.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <form action="{% url 'contact' %}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+               {% csrf_token %}
+  
+           <div class="row gy-4">
+               <div class="col-md-6">
+               <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="col-md-6">
+      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+             </div>
+  
+          <div class="col-md-12">
+           <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+             </div>
+
+             <div class="col-md-12">
+          <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+               <div class="loading">Loading</div>
+               <div class="error-message"></div>
+                 <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                   </div>
+                    </div>
+                  </form>
+
+
+      </div>
+    
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">AneesAnas</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+  <a href="https://x.com/MUHAMMADAN18606" target="_blank"><i class="bi bi-twitter-x"></i></a>
+  <a href="https://www.facebook.com/rajaanees.siddique/" target="_blank"><i class="bi bi-facebook"></i></a>
+  <a href="https://www.linkedin.com/in/muhammad-anees-8a07472a9" target="_blank"><i class="bi bi-linkedin"></i></div>
+
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by AneesAnas</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+<script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'assets/vendor/typed.js/typed.umd.js' %}"></script>
+<script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+<script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+<!-- Main JS File -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
