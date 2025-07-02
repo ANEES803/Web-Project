@@ -10,7 +10,7 @@ SECRET_KEY = config('SECRET_KEY', default='unsafe-secret-key')
 
 # SECURITY
 DEBUG = False
-ALLOWED_HOSTS = [https://web-project-87o4.onrender.com]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'web-project-87o4.onrender.com']
 
 # INSTALLED APPS
 INSTALLED_APPS = [
