@@ -46,13 +46,13 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="#hero" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="{% static 'assets/img/logoo.jpg' %}" alt=""> 
         <h1 class="sitename">AneesAnas</h1>
       </a>
 
-     <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
           <li><a href="#about">About</a></li>
@@ -478,11 +478,15 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="{% static 'assets/img/portfolio/ap4.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Task Manager with Django</h4>
-                <p>A personal task manager where users can sign up, create tasks, set deadlines, and mark completion status — includes CRUD operations.</p>
-                <a href="{% static 'assets/img/portfolio/ap4.jpg' %}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
+                <h4>Event Management System</h4>
+       <p>A personal task manager where users can sign up, create tasks, set deadlines, and mark completion status — includes full CRUD operations.</p>
+        <a href="{% static 'assets/img/portfolio/ap4.jpg' %}" title="Event Management System Screenshot" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+      <i class="bi bi-zoom-in"></i>
+        </a>
+      <a href="https://event-management-system-me2b.onrender.com" title="View Live Site" target="_blank" class="details-link">
+     <i class="bi bi-link-45deg"></i>
+        </a>
+           </div>
             </div><!-- End Portfolio Item -->
 
             
@@ -722,41 +726,37 @@
 
           </div>
         </div>
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert alert-success text-center">{{ message }}</div>
+  {% endfor %}
+{% endif %}
 
-        <form action="{% url 'contact' %}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-               {% csrf_token %}
-  
-           <div class="row gy-4">
-               <div class="col-md-6">
-               <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-            </div>
+      <form method="post" action="{% url 'index' %}">
+  {% csrf_token %}
+  <div class="row gy-4">
+    <div class="col-md-6">
+      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+    </div>
 
-            <div class="col-md-6">
+    <div class="col-md-6">
       <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-             </div>
-  
-          <div class="col-md-12">
-           <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-             </div>
+    </div>
 
-             <div class="col-md-12">
-          <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
-              </div>
+    <div class="col-md-12">
+      <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+    </div>
 
-              <div class="col-md-12 text-center">
-               <div class="loading">Loading</div>
-               <div class="error-message"></div>
-                 <div class="sent-message">Your message has been sent. Thank you!</div>
+    <div class="col-md-12">
+      <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+    </div>
 
-                  <button type="submit">Send Message</button>
-                   </div>
-                    </div>
-                  </form>
+    <div class="col-md-12 text-center mt-3">
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </div>
+  </div>
+</form>
 
-
-      </div>
-    
-    </section><!-- /Contact Section -->
 
   </main>
 
